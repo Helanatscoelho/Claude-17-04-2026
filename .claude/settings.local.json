@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:graph.facebook.com)",
+      "Bash(curl -s \"https://graph.facebook.com/v21.0/me?access_token=2072596130036056|OOQDIb3LDNMHzYr2tJLw7LYblLo\")",
+      "Bash(curl -s \"https://graph.facebook.com/v21.0/me/adaccounts?fields=id,name,account_status,currency,timezone_name&limit=50&access_token=EAAddAZBQXZBVgBRJHe4XFkKV1zBPHj3f5e8AjVTZB7bZCoExUeMrTuHbxmZBCmWjK4oK2VQsaGnD2Kk3IUIDnq5f9WgY5u7KVOs7ORQjD33fxYkdwZA6cAZAvY3n1Vso6ZCrcTkAONf3ZBugfTo9lUyRsFZCPUZA1Gud1SKgJznmK6hW83cBcQiZCDEcOJi4HgbTBZCXz9d37XdO5K9Oxrtf326IqZA2D8wL31MLZBFEuZCr\")",
+      "Bash(curl -s 'https://graph.facebook.com/v21.0/me?fields=id,name&access_token=EAAddAZBQXZBVgBRJHe4XFkKV1zBPHj3f5e8AjVTZB7bZCoExUeMrTuHbxmZBCmWjK4oK2VQsaGnD2Kk3IUIDnq5f9WgY5u7KVOs7ORQjD33fxYkdwZA6cAZAvY3n1Vso6ZCrcTkAONf3ZBugfTo9lUyRsFZCPUZA1Gud1SKgJznmK6hW83cBcQiZCDEcOJi4HgbTBZCXz9d37XdO5K9Oxrtf326IqZA2D8wL31MLZBFEuZCr')",
+      "Bash(curl -s 'https://graph.facebook.com/v21.0/debug_token?input_token=EAAddAZBQXZBVgBRJHe4XFkKV1zBPHj3f5e8AjVTZB7bZCoExUeMrTuHbxmZBCmWjK4oK2VQsaGnD2Kk3IUIDnq5f9WgY5u7KVOs7ORQjD33fxYkdwZA6cAZAvY3n1Vso6ZCrcTkAONf3ZBugfTo9lUyRsFZCPUZA1Gud1SKgJznmK6hW83cBcQiZCDEcOJi4HgbTBZCXz9d37XdO5K9Oxrtf326IqZA2D8wL31MLZBFEuZCr&access_token=EAAddAZBQXZBVgBRJHe4XFkKV1zBPHj3f5e8AjVTZB7bZCoExUeMrTuHbxmZBCmWjK4oK2VQsaGnD2Kk3IUIDnq5f9WgY5u7KVOs7ORQjD33fxYkdwZA6cAZAvY3n1Vso6ZCrcTkAONf3ZBugfTo9lUyRsFZCPUZA1Gud1SKgJznmK6hW83cBcQiZCDEcOJi4HgbTBZCXz9d37XdO5K9Oxrtf326IqZA2D8wL31MLZBFEuZCr')",
+      "Bash(curl -s 'https://graph.facebook.com/v21.0/me/adaccounts?fields=id,name,account_status&access_token=EAAddAZBQXZBVgBRJHe4XFkKV1zBPHj3f5e8AjVTZB7bZCoExUeMrTuHbxmZBCmWjK4oK2VQsaGnD2Kk3IUIDnq5f9WgY5u7KVOs7ORQjD33fxYkdwZA6cAZAvY3n1Vso6ZCrcTkAONf3ZBugfTo9lUyRsFZCPUZA1Gud1SKgJznmK6hW83cBcQiZCDEcOJi4HgbTBZCXz9d37XdO5K9Oxrtf326IqZA2D8wL31MLZBFEuZCr')",
+      "Bash(curl -s 'https://graph.facebook.com/v21.0/me/businesses?fields=id,name&access_token=EAAddAZBQXZBVgBRJHe4XFkKV1zBPHj3f5e8AjVTZB7bZCoExUeMrTuHbxmZBCmWjK4oK2VQsaGnD2Kk3IUIDnq5f9WgY5u7KVOs7ORQjD33fxYkdwZA6cAZAvY3n1Vso6ZCrcTkAONf3ZBugfTo9lUyRsFZCPUZA1Gud1SKgJznmK6hW83cBcQiZCDEcOJi4HgbTBZCXz9d37XdO5K9Oxrtf326IqZA2D8wL31MLZBFEuZCr')",
+      "Bash(curl -s 'https://graph.facebook.com/v21.0/me?fields=id,name&access_token=EAAddAZBQXZBVgBRB2j2OYyQE80p7MQmU348x8vpu5bu6wfB6lNL6IQb0Jq7aL8vGydsXzz98IXqcqAoCaMrZA38bZCSZCuwBeSVHpU2fNZCBU0MZCquXGYCwJFlyIXd2IOfsl0O2dBHispZAqyUIpqsvK7NTFhRLtmO44DvgUtrQD8RIRjn9ueJx7eP651sZAjmmx5IUVC9tL44xMhun06Mx6Cks4R0KN6YPamLfj')",
+      "Bash(curl -s 'https://graph.facebook.com/v21.0/debug_token?input_token=EAAddAZBQXZBVgBRB2j2OYyQE80p7MQmU348x8vpu5bu6wfB6lNL6IQb0Jq7aL8vGydsXzz98IXqcqAoCaMrZA38bZCSZCuwBeSVHpU2fNZCBU0MZCquXGYCwJFlyIXd2IOfsl0O2dBHispZAqyUIpqsvK7NTFhRLtmO44DvgUtrQD8RIRjn9ueJx7eP651sZAjmmx5IUVC9tL44xMhun06Mx6Cks4R0KN6YPamLfj&access_token=EAAddAZBQXZBVgBRB2j2OYyQE80p7MQmU348x8vpu5bu6wfB6lNL6IQb0Jq7aL8vGydsXzz98IXqcqAoCaMrZA38bZCSZCuwBeSVHpU2fNZCBU0MZCquXGYCwJFlyIXd2IOfsl0O2dBHispZAqyUIpqsvK7NTFhRLtmO44DvgUtrQD8RIRjn9ueJx7eP651sZAjmmx5IUVC9tL44xMhun06Mx6Cks4R0KN6YPamLfj')",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e \"const d=require\\('./c:/Users/trafe/.claude/meta-dashboard/data/act_404664394554450_insights.json'\\); console.log\\('records:', d.data.length\\);\")"
+    ]
+  }
+}
