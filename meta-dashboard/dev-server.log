@@ -10,3 +10,4 @@
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
 [2m04:11:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Overview.tsx, /src/index.css[22m
 [2m04:12:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Overview.tsx, /src/index.css[22m
+[2m05:59:43[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:\Users\trafe\.claude\meta-dashboard\tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
