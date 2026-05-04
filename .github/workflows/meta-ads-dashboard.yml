@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
   
-  jobs:
+ jobs:
   gerar-dashboard:
     runs-on: ubuntu-latest
 
