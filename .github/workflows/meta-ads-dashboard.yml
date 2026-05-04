@@ -1,0 +1,41 @@
+name: Dashboard Semanal Meta Ads
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'  # Toda segunda-feira às 10h UTC (07h Brasília)
+  workflow_dispatch:        # Permite rodar manualmente pelo GitHub
+
+jobs:
+  gerar-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Gerar dashboard Meta Ads
+        working-directory: projects/meta-ads-reports
+        run: node fetch_and_generate.js
+
+      - name: Configurar Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit e push dos dashboards gerados
+        run: |
+          git add projects/meta-ads-reports/dashboard_*.html
+
+          # Calcula as datas da semana anterior (segunda a domingo)
+          DATE_END=$(date -d "last sunday" +%Y-%m-%d)
+          DATE_START=$(date -d "last monday" +%Y-%m-%d)
+
+          git diff --cached --quiet && echo "Nenhuma mudança para commitar." || \
+          git commit -m "dashboard: relatório semanal Meta Ads ${DATE_START} a ${DATE_END}"
+
+          git push origin main
