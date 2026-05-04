@@ -5,7 +5,10 @@ on:
     - cron: '0 10 * * 1'  # Toda segunda-feira às 10h UTC (07h Brasília)
   workflow_dispatch:        # Permite rodar manualmente pelo GitHub
 
-jobs:
+permissions:
+  contents: write
+  
+  jobs:
   gerar-dashboard:
     runs-on: ubuntu-latest
 
